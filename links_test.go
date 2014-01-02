@@ -33,3 +33,13 @@ func TestExtractLinksReturnsUniquifiedList(t *testing.T) {
 		t.Errorf("Found %#v instead of %#v", foundLinks, expectedLinks)
 	}
 }
+
+func TestExtractLinksFromFile(t *testing.T) {
+
+	foundLinks := ExtractLinksFromFile(
+		"testdata/fortune_toc_2004_03_22.html")
+
+	if !(len(foundLinks) > 0) {
+		t.Errorf("Found no links in testdata file")
+	}
+}
