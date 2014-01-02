@@ -1,0 +1,1 @@
+Messing around with a scraper to learn Go
