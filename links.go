@@ -1,4 +1,4 @@
-package halo
+package main
 
 import (
 	"io/ioutil"
